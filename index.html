@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panera Bread Bagels Menu with Prices & Calories 2026</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      background: #fffaf3;
+      color: #35281e;
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    /* ---------- HEADER ---------- */
+    .site-head {
+      background: #fffaf3;
+      border-bottom: 3px solid #f0e2d0;
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(6px);
+    }
+
+    .site-head-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+      color: #a55f2c;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo i {
+      color: #d49355;
+    }
+
+    .head-tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #a8907a;
+      font-weight: 700;
+      background: #f7ecdf;
+      padding: 0.35rem 0.9rem;
+      border-radius: 30px;
+      border: 1px solid #ecdbc7;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 2rem;
+      text-align: center;
+    }
+
+    .hero .eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #c07a3e;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero h1 {
+      font-size: 2.9rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      color: #2c1f16;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: #b5672e;
+      position: relative;
+    }
+
+    .hero h1 em::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      right: 0;
+      height: 8px;
+      background: #f6dfc2;
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    .hero .lede {
+      font-size: 1.1rem;
+      color: #6b5847;
+      max-width: 720px;
+      margin: 0 auto 1.8rem;
+    }
+
+    .hero a {
+      color: #b5672e;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .hero a:hover {
+      color: #8a4a1e;
+    }
+
+    .hero-chips {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    .chip {
+      background: #ffffff;
+      border: 1px solid #eddcc8;
+      color: #7a624c;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.45rem 1rem;
+      border-radius: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .chip i {
+      color: #d49355;
+      font-size: 0.8rem;
+    }
+
+    /* ---------- WRAP ---------- */
+    .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+
+    /* ---------- SECTION HEADS ---------- */
+    .sec {
+      margin-top: 3.5rem;
+    }
+
+    .sec-head {
+      margin-bottom: 1.6rem;
+    }
+
+    .sec-head .lbl {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #c07a3e;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    .sec-head h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #2c1f16;
+      line-height: 1.25;
+    }
+
+    .sec-head p {
+      color: #7a624c;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      max-width: 700px;
+    }
+
+    /* ---------- FLAVOR GRID ---------- */
+    .flavor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .flavor-card {
+      background: #ffffff;
+      border: 1px solid #f0e2d0;
+      border-radius: 20px;
+      padding: 1.4rem 1.3rem 1.3rem;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      position: relative;
+    }
+
+    .flavor-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 26px rgba(140, 95, 55, 0.09);
+      border-color: #e3c9ab;
+    }
+
+    .flavor-card .fc-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: #fdf1e3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.9rem;
+    }
+
+    .flavor-card .fc-icon i {
+      font-size: 1.25rem;
+      color: #c07a3e;
+    }
+
+    .flavor-card h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: #2c1f16;
+      margin-bottom: 0.35rem;
+    }
+
+    .flavor-card p {
+      font-size: 0.88rem;
+      color: #7a624c;
+      line-height: 1.5;
+    }
+
+    .flavor-card .fc-meta {
+      margin-top: 0.9rem;
+      padding-top: 0.8rem;
+      border-top: 1px dashed #f0e2d0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+    }
+
+    .fc-meta .cal {
+      color: #9a8470;
+      font-weight: 600;
+    }
+
+    .fc-meta .price {
+      color: #b5672e;
+      font-weight: 800;
+      background: #fdf1e3;
+      padding: 0.2rem 0.7rem;
+      border-radius: 20px;
+    }
+
+    /* ---------- CALORIE BARS ---------- */
+    .cal-panel {
+      background: #ffffff;
+      border: 1px solid #f0e2d0;
+      border-radius: 24px;
+      padding: 2rem 1.9rem;
+    }
+
+    .cal-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px dashed #f2e6d8;
+    }
+
+    .cal-row:last-child {
+      border-bottom: none;
+    }
+
+    .cal-row .name {
+      width: 190px;
+      flex-shrink: 0;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #3d2c1e;
+    }
+
+    .cal-row .bar-track {
+      flex: 1;
+      height: 12px;
+      background: #f8efe4;
+      border-radius: 20px;
+      overflow: hidden;
+      min-width: 60px;
+    }
+
+    .cal-row .bar-fill {
+      height: 100%;
+      border-radius: 20px;
+      background: linear-gradient(90deg, #e8b477, #c07a3e);
+    }
+
+    .cal-row .val {
+      width: 74px;
+      text-align: right;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #a55f2c;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 620px) {
+      .cal-row {
+        flex-wrap: wrap;
+        gap: 0.4rem 0.8rem;
+      }
+      .cal-row .name {
+        width: 100%;
+      }
+      .cal-row .val {
+        width: auto;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+    }
+
+    /* ---------- PRICE TABLE ---------- */
+    .price-wrap {
+      background: #ffffff;
+      border: 1px solid #f0e2d0;
+      border-radius: 24px;
+      overflow: hidden;
+    }
+
+    table.price-tbl {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.94rem;
+    }
+
+    .price-tbl thead th {
+      background: #fdf1e3;
+      color: #7a4d24;
+      text-align: left;
+      padding: 1rem 1.3rem;
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .price-tbl tbody td {
+      padding: 0.95rem 1.3rem;
+      border-bottom: 1px solid #f6ece0;
+      color: #4a3a2c;
+    }
+
+    .price-tbl tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .price-tbl tbody tr:hover td {
+      background: #fffcf7;
+    }
+
+    .price-tbl td:last-child {
+      text-align: right;
+      font-weight: 800;
+      color: #b5672e;
+      white-space: nowrap;
+    }
+
+    .price-tbl .tbl-note {
+      font-size: 0.78rem;
+      color: #a8907a;
+      font-weight: 500;
+      display: block;
+      margin-top: 0.15rem;
+    }
+
+    /* ---------- SPREAD PAIRINGS ---------- */
+    .pair-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.1rem;
+    }
+
+    .pair-card {
+      background: #ffffff;
+      border: 1px solid #f0e2d0;
+      border-radius: 20px;
+      padding: 1.5rem 1.4rem;
+    }
+
+    .pair-card .pair-top {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      margin-bottom: 0.7rem;
+    }
+
+    .pair-card .pair-top i {
+      color: #d49355;
+      font-size: 1.1rem;
+    }
+
+    .pair-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #2c1f16;
+    }
+
+    .pair-card p {
+      font-size: 0.9rem;
+      color: #7a624c;
+      line-height: 1.55;
+    }
+
+    .pair-card .pair-tag {
+      display: inline-block;
+      margin-top: 0.9rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #a55f2c;
+      background: #fdf1e3;
+      padding: 0.3rem 0.75rem;
+      border-radius: 20px;
+    }
+
+    /* ---------- INFO STRIP ---------- */
+    .info-strip {
+      background: #fdf1e3;
+      border: 1px solid #f0dcc4;
+      border-radius: 24px;
+      padding: 2rem 1.9rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    @media (max-width: 720px) {
+      .info-strip {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+      }
+    }
+
+    .info-strip h3 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #2c1f16;
+      margin-bottom: 0.7rem;
+      letter-spacing: -0.01em;
+    }
+
+    .info-strip p {
+      color: #6b5847;
+      font-size: 0.95rem;
+    }
+
+    .info-strip a {
+      color: #b5672e;
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    .info-strip a:hover {
+      color: #8a4a1e;
+    }
+
+    .info-strip ul {
+      list-style: none;
+    }
+
+    .info-strip li {
+      display: flex;
+      gap: 0.7rem;
+      align-items: flex-start;
+      padding: 0.45rem 0;
+      font-size: 0.92rem;
+      color: #4a3a2c;
+    }
+
+    .info-strip li i {
+      color: #c07a3e;
+      font-size: 0.85rem;
+      margin-top: 0.35rem;
+      flex-shrink: 0;
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq-list {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid #f0e2d0;
+      border-radius: 18px;
+      padding: 1.4rem 1.5rem;
+    }
+
+    .faq-item .fq {
+      font-weight: 700;
+      color: #2c1f16;
+      font-size: 1.02rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      gap: 0.7rem;
+      align-items: flex-start;
+    }
+
+    .faq-item .fq i {
+      color: #d49355;
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+      flex-shrink: 0;
+    }
+
+    .faq-item .fa {
+      color: #6b5847;
+      font-size: 0.93rem;
+      padding-left: 1.6rem;
+      line-height: 1.6;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .foot {
+      background: #2c1f16;
+      color: #cbb9a6;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      font-size: 0.85rem;
+    }
+
+    .foot .fbrand {
+      color: #e8b477;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.6rem;
+      font-size: 1rem;
+    }
+
+    .foot p + p {
+      margin-top: 0.5rem;
+      font-size: 0.78rem;
+      color: #9a8470;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-head">
+    <div class="site-head-inner">
+      <div class="logo"><i class="fas fa-bread-slice"></i> Panera Menu Guide</div>
+      <span class="head-tag">Bagels · Prices · Calories</span>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <span class="eyebrow">Bakery Case Favorites</span>
+    <h1>Panera Bread <em>Bagels Menu</em><br>with Prices 2026</h1>
+    <p class="lede">Explore the complete Panera Bread bagels menu — classic flavors, specialty options, cream cheese spreads, calories, and current pricing for your next breakfast or snack. This guide is part of our wider <a href="https://panerabreadsmenu.com/" target="_blank" rel="noopener">Panera Bread Menu</a> coverage.</p>
+    <div class="hero-chips">
+      <span class="chip"><i class="fas fa-circle-notch"></i> Classic Flavors</span>
+      <span class="chip"><i class="fas fa-cookie-bite"></i> Sweet Options</span>
+      <span class="chip"><i class="fas fa-cheese"></i> Spreads &amp; Cream Cheese</span>
+      <span class="chip"><i class="fas fa-mug-hot"></i> Breakfast or Anytime</span>
+    </div>
+  </section>
+
+  <div class="wrap">
+
+    <!-- FLAVOR CARDS -->
+    <section class="sec">
+      <div class="sec-head">
+        <span class="lbl">Explore by Flavor</span>
+        <h2>Classic &amp; Specialty Bagels</h2>
+        <p>From simple favorites to sweeter and more distinctive flavors — selection can vary by bakery-café.</p>
+      </div>
+
+      <div class="flavor-grid">
+        <div class="flavor-card">
+          <div class="fc-icon"><i class="fas fa-circle"></i></div>
+          <h3>Plain Bagel</h3>
+          <p>The neutral classic — perfect with any spread and a reliable choice for breakfast sandwiches.</p>
+          <div class="fc-meta"><span class="cal">~280 cal</span><span class="price">$1.99</span></div>
+        </div>
+        <div class="flavor-card">
+          <div class="fc-icon"><i class="fas fa-seedling"></i></div>
+          <h3>Everything Bagel</h3>
+          <p>Sesame, poppy, garlic, onion, and salt — the savory go-to for a bold, textured bite.</p>
+          <div class="fc-meta"><span class="cal">~290 cal</span><span class="price">$1.99</span></div>
+        </div>
+        <div class="flavor-card">
+          <div class="fc-icon"><i class="fas fa-braille"></i></div>
+          <h3>Sesame Bagel</h3>
+          <p>A lightly toasted, nutty flavor that pairs well with cream cheese or butter.</p>
+          <div class="fc-meta"><span class="cal">~280 cal</span><span class="price">$1.99</span></div>
+        </div>
+        <div class="flavor-card">
+          <div class="fc-icon"><i class="fas fa-cookie"></i></div>
+          <h3>Cinnamon Crunch Bagel</h3>
+          <p>Sweet, crunchy, and dusted with cinnamon — a Panera bakery signature and breakfast staple.</p>
+          <div class="fc-meta"><span class="cal">~420 cal</span><span class="price">$2.29</span></div>
+        </div>
+        <div class="flavor-card">
+          <div class="fc-icon"><i class="fas fa-wine-glass"></i></div>
+          <h3>Cinnamon Swirl Raisin</h3>
+          <p>Swirled cinnamon with plump raisins — a sweeter, more dessert-like bagel option.</p>
+          <div class="fc-meta"><span class="cal">~350 cal</span><span class="price">$2.19</span></div>
+        </div>
+        <div class="flavor-card">
+          <div class="fc-icon"><i class="fas fa-cheese"></i></div>
+          <h3>Asiago Cheese Bagel</h3>
+          <p>Baked with asiago cheese for a rich, savory flavor — excellent toasted or in a sandwich.</p>
+          <div class="fc-meta"><span class="cal">~320 cal</span><span class="price">$2.19</span></div>
+        </div>
+        <div class="flavor-card">
+          <div class="fc-icon"><i class="fas fa-circle-half-stroke"></i></div>
+          <h3>Blueberry Bagel</h3>
+          <p>Sweet blueberry flavor baked right in — a fruity choice with cream cheese.</p>
+          <div class="fc-meta"><span class="cal">~300 cal</span><span class="price">$1.99</span></div>
+        </div>
+        <div class="flavor-card">
+          <div class="fc-icon"><i class="fas fa-leaf"></i></div>
+          <h3>Multigrain Bagel Flat</h3>
+          <p>The lighter option — among the lowest-calorie bagel choices on the menu.</p>
+          <div class="fc-meta"><span class="cal">~190 cal</span><span class="price">$2.49</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALORIE BARS -->
+    <section class="sec">
+      <div class="sec-head">
+        <span class="lbl">Nutrition Snapshot</span>
+        <h2>Bagel Calories Compared</h2>
+        <p>Calories vary by variety, size, and toppings. These figures reflect typical 2026 nutrition information.</p>
+      </div>
+
+      <div class="cal-panel">
+        <div class="cal-row">
+          <span class="name">Multigrain Bagel Flat</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 45%;"></div></div>
+          <span class="val">190 cal</span>
+        </div>
+        <div class="cal-row">
+          <span class="name">Plain Bagel</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 66%;"></div></div>
+          <span class="val">280 cal</span>
+        </div>
+        <div class="cal-row">
+          <span class="name">Sesame Bagel</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 66%;"></div></div>
+          <span class="val">280 cal</span>
+        </div>
+        <div class="cal-row">
+          <span class="name">Everything Bagel</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 69%;"></div></div>
+          <span class="val">290 cal</span>
+        </div>
+        <div class="cal-row">
+          <span class="name">Blueberry Bagel</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 71%;"></div></div>
+          <span class="val">300 cal</span>
+        </div>
+        <div class="cal-row">
+          <span class="name">Asiago Cheese Bagel</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 76%;"></div></div>
+          <span class="val">320 cal</span>
+        </div>
+        <div class="cal-row">
+          <span class="name">Cinnamon Swirl Raisin</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 83%;"></div></div>
+          <span class="val">350 cal</span>
+        </div>
+        <div class="cal-row">
+          <span class="name">Cinnamon Crunch Bagel</span>
+          <div class="bar-track"><div class="bar-fill" style="width: 100%;"></div></div>
+          <span class="val">420 cal</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICE TABLE -->
+    <section class="sec">
+      <div class="sec-head">
+        <span class="lbl">Menu Pricing</span>
+        <h2>Panera Bagels Menu Prices 2026</h2>
+        <p>Typical in-café pricing. Costs may vary by location and ordering method.</p>
+      </div>
+
+      <div class="price-wrap">
+        <table class="price-tbl">
+          <thead>
+            <tr>
+              <th scope="col">Bagel</th>
+              <th scope="col">Style</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Plain Bagel<span class="tbl-note">Classic, versatile</span></td>
+              <td>Classic</td>
+              <td>$1.99</td>
+            </tr>
+            <tr>
+              <td>Everything Bagel<span class="tbl-note">Savory seed blend</span></td>
+              <td>Classic</td>
+              <td>$1.99</td>
+            </tr>
+            <tr>
+              <td>Sesame Bagel<span class="tbl-note">Light, nutty</span></td>
+              <td>Classic</td>
+              <td>$1.99</td>
+            </tr>
+            <tr>
+              <td>Blueberry Bagel<span class="tbl-note">Fruity, sweet</span></td>
+              <td>Sweet</td>
+              <td>$1.99</td>
+            </tr>
+            <tr>
+              <td>Cinnamon Swirl Raisin<span class="tbl-note">Swirled cinnamon</span></td>
+              <td>Sweet</td>
+              <td>$2.19</td>
+            </tr>
+            <tr>
+              <td>Asiago Cheese Bagel<span class="tbl-note">Rich and savory</span></td>
+              <td>Specialty</td>
+              <td>$2.19</td>
+            </tr>
+            <tr>
+              <td>Cinnamon Crunch Bagel<span class="tbl-note">Bakery signature</span></td>
+              <td>Sweet</td>
+              <td>$2.29</td>
+            </tr>
+            <tr>
+              <td>Multigrain Bagel Flat<span class="tbl-note">Lighter choice</span></td>
+              <td>Light</td>
+              <td>$2.49</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- SPREAD PAIRINGS -->
+    <section class="sec">
+      <div class="sec-head">
+        <span class="lbl">Make It Yours</span>
+        <h2>Bagel Spreads &amp; Cream Cheese Options</h2>
+        <p>Cream cheese and spread options may be available to pair with bagels. Specific varieties and availability can differ by location.</p>
+      </div>
+
+      <div class="pair-grid">
+        <div class="pair-card">
+          <div class="pair-top"><i class="fas fa-cheese"></i><h3>Plain Cream Cheese</h3></div>
+          <p>The classic pairing. Smooth, rich, and works with every bagel on the menu — from plain to everything.</p>
+          <span class="pair-tag">Best with Plain &amp; Sesame</span>
+        </div>
+        <div class="pair-card">
+          <div class="pair-top"><i class="fas fa-carrot"></i><h3>Garden Veggie Spread</h3></div>
+          <p>A lighter, savory spread with vegetables folded in — a good match for multigrain and everything bagels.</p>
+          <span class="pair-tag">Best with Multigrain</span>
+        </div>
+        <div class="pair-card">
+          <div class="pair-top"><i class="fas fa-jar"></i><h3>Honey Walnut Spread</h3></div>
+          <p>Sweet and nutty, this spread complements cinnamon and blueberry bagels especially well.</p>
+          <span class="pair-tag">Best with Cinnamon</span>
+        </div>
+        <div class="pair-card">
+          <div class="pair-top"><i class="fas fa-butter"></i><h3>Butter &amp; Preserves</h3></div>
+          <p>A simple option for those who prefer less richness. Ask for butter or a side of fruit preserves.</p>
+          <span class="pair-tag">Light Choice</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO STRIP -->
+    <section class="sec">
+      <div class="info-strip">
+        <div>
+          <h3>Breakfast or Anytime</h3>
+          <p>Bagels are a convenient choice for breakfast, a light meal, or a quick snack. Many cafés also offer them as the base for breakfast sandwiches. For full morning options and serving windows, see our <a href="https://panerabreadsmenu.com/panera-bread-bagels-menu/" target="_blank" rel="noopener">Panera Bread Bagels Menu</a> page.</p>
+        </div>
+        <div>
+          <ul>
+            <li><i class="fas fa-check"></i> Available from opening through most of the day</li>
+            <li><i class="fas fa-check"></i> Can be toasted on request at most locations</li>
+            <li><i class="fas fa-check"></i> Frequently used in breakfast sandwiches</li>
+            <li><i class="fas fa-check"></i> Great for groups — order by the half dozen or dozen</li>
+            <li><i class="fas fa-check"></i> Selection is best in the morning hours</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="sec">
+      <div class="sec-head">
+        <span class="lbl">Common Questions</span>
+        <h2>Panera Bread Bagels Menu FAQ</h2>
+        <p>Answers to the questions people ask most about Panera bagels, calories, and spreads.</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="fq"><i class="fas fa-question-circle"></i> What bagel flavors does Panera Bread offer?</div>
+          <div class="fa">Panera offers several bagel varieties, including Plain, Everything, Sesame, Blueberry, Cinnamon Crunch, Cinnamon Swirl Raisin, Asiago Cheese and other options. Selection can vary by bakery-café.</div>
+        </div>
+        <div class="faq-item">
+          <div class="fq"><i class="fas fa-question-circle"></i> How many calories are in a Panera bagel?</div>
+          <div class="fa">Calories vary by variety. Based on Panera's 2026 nutrition information, bagels range considerably depending on ingredients and toppings, so check the individual item when comparing options.</div>
+        </div>
+        <div class="faq-item">
+          <div class="fq"><i class="fas fa-question-circle"></i> Which Panera bagel has the fewest calories?</div>
+          <div class="fa">Among the bagels listed in the 2026 nutrition information used for this page, the Multigrain Bagel Flat has 190 calories.</div>
+        </div>
+        <div class="faq-item">
+          <div class="fq"><i class="fas fa-question-circle"></i> Does Panera have cream cheese and spreads for bagels?</div>
+          <div class="fa">Cream cheese and spread options may be available to pair with bagels. Specific varieties and availability can differ by location.</div>
+        </div>
+        <div class="faq-item">
+          <div class="fq"><i class="fas fa-question-circle"></i> Are Panera bagels available all day?</div>
+          <div class="fa">Bagels are generally available from opening through most of the day, though the widest selection is usually in the morning. Popular flavors can sell out later in the day.</div>
+        </div>
+        <div class="faq-item">
+          <div class="fq"><i class="fas fa-question-circle"></i> Do Panera bagel prices vary by location?</div>
+          <div class="fa">Yes. Prices can differ by restaurant location, local market, and whether you order in-café, via drive-thru, or through delivery.</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="fbrand"><i class="fas fa-bread-slice"></i> PANERA MENU GUIDE 2026</div>
+    <p>Independent informational resource · Not affiliated with Panera Bread.</p>
+    <p>Prices, calories, and availability are estimates and subject to change. Always confirm with your local bakery-café.</p>
+  </footer>
+
+</body>
+</html>
